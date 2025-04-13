@@ -5,7 +5,7 @@ services:
   # Frontend React application
   frontend:
     build:
-      context: https://github.com/yourusername/proteuslab-frontend.git
+      context: https://github.com/cscheidegger/ecommerce-front.git
       dockerfile: Dockerfile
     ports:
       - "5173:80"
@@ -20,7 +20,7 @@ services:
   # FastAPI backend
   api:
     build:
-      context: https://github.com/yourusername/proteuslab-api.git
+      context: https://github.com/cscheidegger/ecommerce-api.git
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
